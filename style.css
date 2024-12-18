@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .game-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: #007bff;
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: rotateY(180deg);
+    transition: transform 0.5s ease;
+  }
+  
+  .card.hidden {
+    visibility: hidden;
+  }
+  
+  .card.face-up {
+    background-color: #fff;
+    color: #000;
+    cursor: default;
+    transform: rotateY(0);
+  }
+  
+  .message {
+    font-size: 20px;
+    margin-top: 20px;
+    color: green;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
